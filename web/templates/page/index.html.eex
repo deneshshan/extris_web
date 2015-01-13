@@ -1,0 +1,13 @@
+<h2>Extris</h2>
+
+<ul>
+  <li>Get extris game started when websocket connects to channel</li>
+  <li>Render board for game in js via websockets</li>
+  <li>Send game events to game over websockets</li>
+</ul>
+
+<canvas id="canvas" width="500" height="600">
+</canvas>
+
+<script src="/js/phoenix.js"></script>
+<script src="/js/extris.js"></script>
