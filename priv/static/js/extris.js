@@ -94,7 +94,8 @@ socket.join("extris", "play", {}, function(channel){
   });
 
   function gameEventFor(evt){
-    switch(evt.keyIdentifier){
+    var key = evt.keyIdentifier || evt.key;
+    switch(key){
       case "Up":
         return "rotate_cw";
       case "Left":
@@ -102,7 +103,7 @@ socket.join("extris", "play", {}, function(channel){
       case "Right":
         return "move_right";
       default:
-        console.log(evt.keyIdentifier);
+        console.log(key);
         return "noop";
     }
   }
