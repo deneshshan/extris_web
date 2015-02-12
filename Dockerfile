@@ -16,5 +16,6 @@ WORKDIR /usr/include/
 RUN ln -s /usr/lib/erlang/usr/include/erl_native_features_config.h
 WORKDIR /home/app/extris
 RUN mix deps.get
+RUN mix deps.compile
 
 EXPOSE 4000
